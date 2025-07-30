@@ -20,3 +20,6 @@ Following patch generation, the feature vectors were extracted using the followi
 
 For each cancer dataset, we trained the PORPOISE model (https://github.com/mahmoodlab/PORPOISE), AMIL network with WSI only input in a 5-fold cross-validation.
 We used the PORPOISE hyperparameters suggested by the authors, except for: the alpha_surv (serves to weigh the uncensored patients) set at 0.5 and max_epochs (the maximum number of epochs to train) set at 40 in our experiments.
+
+All the models, except for TIL-Maps-23, are available for downloading in PyTorch ckpt or pt format (cf. the corresponding github repositories for instructions).
+TIL-Maps-23 is distributed in tensorflow format, we converted it into PyTorch, please, contact if interested.
